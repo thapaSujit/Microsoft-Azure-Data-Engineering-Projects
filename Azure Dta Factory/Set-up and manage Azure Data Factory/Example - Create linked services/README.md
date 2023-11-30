@@ -1,4 +1,4 @@
-# Data Factory Linked Service Setup
+# Example - Create linked services
 
 Before you create a dataset, you must create a linked service to link your data store to the data factory. Linked services are much like connection strings, which define the connection information needed for Data Factory to connect to external resources. There are over 100 connectors that can be used to define a linked service.
 
