@@ -1,11 +1,5 @@
 ## Exercise - Add the Storage Client Library to Your App
 
-**Completed: 100 XP  
-Estimated Time: 5 minutes**
-
-Sandbox activated! Time remaining:   
-You have used 3 of 10 sandboxes for today. More sandboxes will be available tomorrow.
-
 ### Choose Your Development Language
 
 Let's integrate the Azure Storage Blob Client Library for JavaScript into your application. The Node.js client library is available through the Node Package manager (npm). You'll want to add the `@azure/storage-blob` package to your `packages.json` file.

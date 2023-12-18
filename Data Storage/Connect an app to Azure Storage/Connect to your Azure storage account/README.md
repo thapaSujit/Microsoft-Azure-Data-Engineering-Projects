@@ -2,6 +2,10 @@
 
 
 You've added the required client libraries to your application and are ready to connect to your Azure storage account.
+To work with data in a storage account, your app will need two pieces of data:
+
+1. Access key
+2. REST API endpoint
 
 ### Security Access Keys
 
