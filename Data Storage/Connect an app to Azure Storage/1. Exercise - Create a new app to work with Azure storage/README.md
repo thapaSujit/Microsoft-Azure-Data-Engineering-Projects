@@ -1,8 +1,6 @@
-## Exercise - Create a New App to Work with Azure Storage
+## Exercise - Create a New App to Work with Azure Storage 
 
-This module requires a sandbox to complete. 
-
-Recall that we're working on a photo-sharing application that uses Azure Storage to manage pictures and other bits of data we store on behalf of our users.
+We're working on a photo-sharing application that uses Azure Storage to manage pictures and other bits of data we store on behalf of our users.
 
 To simplify our scenario so that we can focus on the Storage APIs, we'll create a new Node.js application that can run from the console. We'll also assume it always has network connectivity. However, you should always harden your app to ensure network failures won't affect the user experience or result in a failure of the application itself.
 

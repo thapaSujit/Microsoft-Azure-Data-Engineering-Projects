@@ -1,7 +1,5 @@
 ## Connect to Your Azure Storage Account
 
-**Completed: 100 XP  
-Estimated Time: 10 minutes**
 
 You've added the required client libraries to your application and are ready to connect to your Azure storage account.
 
