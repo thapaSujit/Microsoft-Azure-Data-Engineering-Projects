@@ -1,8 +1,5 @@
 # Exercise - Connect your application to your Azure Storage account
 
-**Status: In Progress  
-XP: [XP Value]  
-Estimated Time: [Time Estimate]**
 
 ## Azure Storage client library object model
 
