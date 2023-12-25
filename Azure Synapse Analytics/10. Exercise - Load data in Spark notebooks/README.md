@@ -76,3 +76,44 @@ There are parameter name values that you need to replace in the above code to en
 The third possibility is to read data from the primary storage account using the Data tab in the Azure Synapse Studio environment. 
 
 Right-click on a file and select New notebook to view a new notebook with the data generated.
+
+## Ingest and explore Parquet files from a data lake with Apache Spark for Azure Synapse
+
+Tailwind Traders has Parquet files stored in their data lake. They need to quickly access the files and explore them using Apache Spark.
+
+You recommend that they use the Data hub to view the Parquet files in the connected storage account, and then use the new notebook context menu to create a new Synapse notebook that loads a Spark DataFrame with the contents of a selected Parquet file.
+
+You can complete this task using the following steps:
+
+1. Open the Azure Synapse Studio.
+
+2. Select the Data hub.
+
+3. Select the Linked tab (1) and expand the primary data lake storage account (the name may differ from what you see here; it is the first storage account listed). 
+
+Select the wwi-02 container (2) and browser to the sale-small/Year=2010/Quarter=Q4/Month=12/Day=20101231 folder (3). 
+
+Right-click the Parquet file (4) and select New notebook (5).
+
+A new notebook is generated with PySpark code to load the data in a Spark DataFrame and display 100 rows with the header.
+
+4. Ensure the Spark pool is attached to the notebook.
+
+5. Select Configure session at the bottom-left of the notebook to change the Spark configuration for this session.
+
+6. Set the number of Executors to 3 (1), then select Apply (2).
+
+We have just set the number of executors allocated to SparkPool01 for the session.
+
+7. Add the following code beneath the code in the cell to define a variable named datalake whose value is the name of the primary storage account (replace the REPLACE_WITH_YOUR_DATALAKE_NAME value with the name of the storage account in line 2):
+        - datalake = 'REPLACE_WITH_YOUR_DATALAKE_NAME'
+
+8. Select Run all on the notebook toolbar to execute the notebook.
+
+Note: The first time you run a notebook in a Spark pool, Synapse creates a new session. This can take approximately 3-5 minutes. To run just the cell, either hover over the cell and select the Run cell icon to the left of the cell, or select the cell and then type Ctrl+Enter on your keyboard.
+
+9. After the cell run is complete, change the View to Chart in the cell output.
+
+By default, the cell outputs to a table view when you use the display() function. You can see in the output the sales transaction data stored in the Parquet file for December 31, 2010. Select the Chart visualization to see a different view of the data.
+
+10. Select the View options button to the right.
